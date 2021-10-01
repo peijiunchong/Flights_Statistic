@@ -1,45 +1,45 @@
-Rank,City 1,City 2,Flights,Top carriers,ori_lat,ori_long,ori_area,dest_lat,dest_long,dest_area,Type
-1,Jeju City,Seoul,"79,460","Air Busan, Air Seoul, Asiana Airlines, Eastar Jet, Jeju Air, Jin Air, Korean Air, T'way Air",33.5129,126.5232,977.91,37.5583,126.791,605.21,Domestic
-2,Kuala Lumpur,Singapore,59920,"Malaysia Airlines, Singapore Airlines, AirAsia, SilkAir, Jetstar Asia, Malindo Air, Scoot, Firefly, Saudia",2.745579958,101.7099991,243.00,1.344140053,104.0090027,716.10,International
-3,Hong Kong,Taoyuan,58381,"Cathay Pacific, China Airlines, EVA Airlines, Hong Kong Airlines",22.308901,113.915001,1108.00,25.0777,121.233002,1220.95,International
-4,Jakarta,Singapore,54176,"Singapore Airlines, Garuda, Lion Air, Jetstar Asia, Indonesia AirAsia, Scoot, Batik Air",-6.12556982,106.6559982,740.28,1.344140053,104.0090027,716.10,International
-5,Melbourne,Sydney,"54,102","Jetstar Airways, Qantas, Virgin Australia, Tigerair Australia",-37.8136,144.9631,9990.50,-33.8728,151.2053,12144.60,Domestic
-6,Delhi,Mumbai,"45,188","Air India, GoAir, IndiGo, Jet Airways, SpiceJet, Vistara",28.5665,77.103104,1484.00,18.9750,72.8258,603.00,Domestic
-7,Hong Kong,Pudong,42706,"China Eastern Airlines, Hong Kong Airlines, Cathay Pacific",22.308901,113.915001,1108.00,31.14340019,121.8050003,1210.40,International
-8,Jakarta,Kuala Lumpur,40739,"Malaysia Airlines, AirAsia, Lion Air, Indonesia AirAsia, Malindo Airways, Garuda",-6.12556982,106.6559982,740.28,2.745579958,101.7099991,243.00,International
-9,Rio de Janeiro,São Paulo,"39,747","Gol Transportes AÃ©reos, LATAM Airlines Brasil, Azul Linhas AÃ©reas",-22.9014,-43.1789,1221.00,-23.5487,-46.6383,1521.11,Domestic
-10,Fukuoka,Tokyo,"39,406","All Nippon Airways, Japan Airlines, Skymark Airlines",33.5970,130.4081,340.03,35.552299,139.779999,2187.66,Domestic
-11,Hanoi,Ho Chi Minh City,"39,291","Vietnam Airlines, Jetstar Pacific, Vietjet Air",21.22120094,105.8069992,3344.70,10.81879997,106.6520004,2095.00,Domestic
-12,Sapporo,Tokyo,"39,271","All Nippon Airways, Japan Airlines, Skymark Airlines",43.0343,141.3588,1121.12,35.552299,139.779999,2187.66,Domestic
-13,Jakarta,Surabaya,"37,762","Garuda Indonesia, Citilink, Lion Air, Batik Air",-6.12556982,106.6559982,740.28,-7.2433,112.7414,374.78,Domestic
-14,Incheon,Osaka,36048,"Asiana Airlines, Korean Air, Jin Air, Jeju Airlines, Peach Aviation, Easter Jet, T'way Air",37.46910095,126.4509964,1029.43,34.6939,135.5022,223.00,International
-15,Los Angeles,San Francisco,"35,365","American Airlines, Delta Air Lines, Southwest Airlines, United Airlines, Alaska Airlines",34.0522,-118.2433,1301.97,37.61899948,-122.375,600.60,Domestic
-16,Jeddah,Riyadh,"35,149","Saudia, Flynas",21.5433,39.1728,1600.00,24.6333,46.7167,1554.00,Domestic
-17,New York,Toronto,34072,"Air Canada, Westjet, American Airlines",40.77719879,-73.87259674,141300.00,43.6519,-79.3817,630.00,International
-18,Cape Town,Johannesburg,"33,708","Comair, Mango, South African Airways, Safair",-33.9253,18.4239,2454.72,-26.2015,28.0455,1644.96,Domestic
-19,Brisbane,Sydney,"33,443","Jetstar Airways, Qantas, Virgin Australia, Tigerair Australia",-27.4700,153.0230,5949.90,-33.8728,151.2053,12144.60,Domestic
-20,Hong Kong,Incheon,33441,"Cathay Pacific, Korean Air, HK Express, Asiana Airlines, Jeju Airlines,Easter Jet,T'way Air,Jin Air, Jeju Airlines",22.308901,113.915001,1108.00,37.46910095,126.4509964,1029.43,International
-21,Jakarta,Denpasar,"31,958","Batik Air, Citilink, Garuda Indonesia, Lion Air, Sriwijaya Air",-6.12556982,106.6559982,740.28,-8.6722,115.2336,123.98,Domestic
-22,Bögöt,Medellín,"31,279","Avianca, LATAM Airlines, VivaAir",47.2535,16.8291,4.99,6.2308,-75.5906,380.64,Domestic
-23,Shanghai,Shenzhen,"29,401","Spring Airlines, China Southern Airlines, Xianmen Airlines, China Eastern Airlines, Shenzhen Airlines",31.19790077,121.3359985,6340.50,22.5500,114.1000,2050.00,Domestic
-24,Bangkok,Singapore,29314,"Singapore Airlines, Thai Airways, Scoot, Jetstar Asia",13.68109989,100.7470016,1568.74,1.344140053,104.0090027,716.10,International
-25,Bangkok,Hong Kong,29238,"Cathay Pacific, Thai Airways, Hong Kong Airlines, Emirates,HK Express",13.68109989,100.7470016,1568.74,22.308901,113.915001,1108.00,International
-26,Beijing,Shanghai,"29,233","Air China, China Eastern Airlines, China Southern Airlines, Hainan Airlines, Xiamen Airlines",40.08010101,116.5849991,16410.50,31.19790077,121.3359985,6340.50,Domestic
-27,Hong Kong,Singapore,29191,"Cathay Pacific Airways, Singapore Airlines, Scoot, Jetstar Asia",22.308901,113.915001,1108.00,1.344140053,104.0090027,716.10,International
-28,Hong Kong,Beijing,29135,"Air China, Hong Kong Airlines, Cathay Pacific, China Southern Airlines",22.308901,113.915001,1108.00,40.08010101,116.5849991,16410.50,International
-29,Dublin,London,28946,"Aer Lingus, British Airways",53.3441,-6.2675,114.99,51.5002,-0.1262,1572.00,International
-30,Jakarta,Makassar,"28,903","Garuda Indonesia, Citilink, Lion Air, Batik Air",-6.12556982,106.6559982,740.28,-5.1333,119.4167,175.77,Domestic
-31,New Delhi,Bengaluru,"28,716","AirAsia India, Air India, GoAir, IndiGo, Jet Airways, SpiceJet, Vistara",28.6139,77.2089,1484.00,12.9667,77.5667,741.00,Domestic
-32,Narita,Taoyuan,28636,"China Airlines, EVA Air, Peach Aviation, Tigerair Taiwan, Japan Airlines, ANA, Cathay Pacific, Jetstar Japan",35.7833,140.3167,213.84,25.0777,121.233002,1220.95,International
-33,Dubai International City,Kuwait,28629,"Emirates, Flydubai, Kuwait Airways, Jazeera Airways",25.1419,55.4047,8.20,29.22660065,47.96889877,17818.00,International
-34,New York,London,28106,"British Airways, Virgin Atlantic, American Airlines, Delta Air Lines",40.63980103,-73.77890015,141300.00,51.5002,-0.1262,1572.00,International
-35,Osaka,Pudong,27676,"China Eastern Airlines, Air China, Juneyao Airlines, All Nippon Airways, Spring Airlines",34.6939,135.5022,223.00,31.14340019,121.8050003,1210.40,International
-36,Cusco,Lima,"27,092","Avianca, LATAM PerÃº, Peruvian Airlines",-13.5250,-71.9722,385.10,-12.0433,-77.0283,2672.30,Domestic
-37,Incheon,Narita,27077,"Asiana Airlines, Korean Air, Jeju Airlines, Eastar Jet, Jin Air, T'way Air, Japan Airlines",37.46910095,126.4509964,1029.43,35.7833,140.3167,213.84,International
-38,Chicago,Toronto,26695,"Air Canada, United Airlines, American Airlines",41.8832,-87.6324,606.10,43.6519,-79.3817,630.00,International
-39,Amsterdam,London,26390,"KLM, British Airways",52.3732,4.8907,219.00,51.5002,-0.1262,1572.00,International
-40,Los Angeles,New York,"26,286","American Airlines, Delta Air Lines, JetBlue Airways, Alaska Airlines",34.0522,-118.2433,1301.97,40.7130,-74.0072,1214.45,Domestic
-41,Hong Kong,Manila,26270,"Cebu Pacific Air, Cathay Pacific, Philippine Airlines, Philippine AirAsia",22.308901,113.915001,1108.00,14.5823,120.9748,42.88,International
-42,Frankfurt,London,26158,"British Airways, Lufthansa",50.1109,8.6795,248.31,51.5002,-0.1262,1572.00,International
-43,Cairo,Jeddah,25396,"Saudi Arabian Airlines, Egyptair, Flynas",30.0435,31.2353,453.00,21.5433,39.1728,1600.00,International
-44,Stockholm,Oslo,25204,"Norwegian Air Shuttle, SAS",59.3294,18.0686,188.00,59.89580154,10.6171999,454.00,International
+Rank,City 1,City 2,Flights,Top carriers,origin,ori_lat,ori_long,ori_area,destination,dest_lat,dest_long,dest_area,Type
+1,Jeju City,Seoul,79460,"Air Busan, Air Seoul, Asiana Airlines, Eastar Jet, Jeju Air, Jin Air, Korean Air, T'way Air",CJU,33.51129913,126.4929962,977.91,GMP,37.5583,126.791,605.21,Domestic
+2,Kuala Lumpur,Singapore,59920,"Malaysia Airlines, Singapore Airlines, AirAsia, SilkAir, Jetstar Asia, Malindo Air, Scoot, Firefly, Saudia",KUL,2.745579958,101.7099991,243,SIN,1.35019,103.994003,716.1,International
+3,Hong Kong,Taoyuan,58381,"Cathay Pacific, China Airlines, EVA Airlines, Hong Kong Airlines",HKG,22.308901,113.915001,1108,TPE,25.0777,121.233002,1220.95,International
+4,Jakarta,Singapore,54176,"Singapore Airlines, Garuda, Lion Air, Jetstar Asia, Indonesia AirAsia, Scoot, Batik Air",CGK,-6.12556982,106.6559982,740.28,SIN,1.35019,103.994003,716.1,International
+5,Melbourne,Sydney,54102,"Jetstar Airways, Qantas, Virgin Australia, Tigerair Australia",MEL,-37.673302,144.843002,9990.5,SYD,-33.94609833,151.177002,12144.6,Domestic
+6,Delhi,Mumbai,45188,"Air India, GoAir, IndiGo, Jet Airways, SpiceJet, Vistara",DEL,28.5665,77.103104,1484,BOM,19.08869934,72.86789703,603,Domestic
+7,Hong Kong,Pudong,42706,"China Eastern Airlines, Hong Kong Airlines, Cathay Pacific",HKG,22.308901,113.915001,1108,PVG,31.14340019,121.8050003,1210.4,International
+8,Jakarta,Kuala Lumpur,40739,"Malaysia Airlines, AirAsia, Lion Air, Indonesia AirAsia, Malindo Airways, Garuda",CGK,-6.12556982,106.6559982,740.28,KUL,2.745579958,101.7099991,243,International
+9,Rio de Janeiro,Sao Paulo,39747,"Gol Transportes AÃ©reos, LATAM Airlines Brasil, Azul Linhas AÃ©reas",SDU,-22.91049957,-43.1631012,1221,CGH,-23.62611008,-46.65638733,1521.11,Domestic
+10,Fukuoka,Tokyo,39406,"All Nippon Airways, Japan Airlines, Skymark Airlines",FUK,33.58589935,130.451004,340.03,HND,35.552299,139.779999,2187.66,Domestic
+11,Hanoi,Ho Chi Minh City,39291,"Vietnam Airlines, Jetstar Pacific, Vietjet Air",HAN,21.22120094,105.8069992,3344.7,SGN,10.81879997,106.6520004,2095,Domestic
+12,Sapporo,Tokyo,39271,"All Nippon Airways, Japan Airlines, Skymark Airlines",CTS,42.77519989,141.6920013,1121.12,HND,35.552299,139.779999,2187.66,Domestic
+13,Jakarta,Surabaya,37762,"Garuda Indonesia, Citilink, Lion Air, Batik Air",CGK,-6.12556982,106.6559982,740.28,SUB,-7.379829884,112.7870026,374.78,Domestic
+14,Incheon,Osaka,36048,"Asiana Airlines, Korean Air, Jin Air, Jeju Airlines, Peach Aviation, Easter Jet, T'way Air",ICN,37.46910095,126.4509964,1029.43,ITM,34.78549957,135.4380035,223,International
+15,Los Angeles,San Francisco,35365,"American Airlines, Delta Air Lines, Southwest Airlines, United Airlines, Alaska Airlines",LAX,33.94250107,-118.4079971,1301.97,SFO,37.61899948,-122.375,600.6,Domestic
+16,Jeddah,Riyadh,35149,"Saudia, Flynas",JED,21.6796,39.156502,1600,RUH,24.95759964,46.69879913,1554,Domestic
+17,New York,Toronto,34072,"Air Canada, Westjet, American Airlines",LGA,40.77719879,-73.87259674,141300,YYZ,43.67720032,-79.63059998,630,International
+18,Cape Town,Johannesburg,33708,"Comair, Mango, South African Airways, Safair",CPT,-33.96480179,18.60169983,2454.72,JNB,-26.1392,28.246,1644.96,Domestic
+19,Brisbane,Sydney,33443,"Jetstar Airways, Qantas, Virgin Australia, Tigerair Australia",BNE,-27.38419914,153.1170044,5949.9,SYD,-33.94609833,151.177002,12144.6,Domestic
+20,Hong Kong,Incheon,33441,"Cathay Pacific, Korean Air, HK Express, Asiana Airlines, Jeju Airlines,Easter Jet,T'way Air,Jin Air, Jeju Airlines",HKG,22.308901,113.915001,1108,ICN,37.46910095,126.4509964,1029.43,International
+21,Jakarta,Denpasar,31958,"Batik Air, Citilink, Garuda Indonesia, Lion Air, Sriwijaya Air",CGK,-6.12556982,106.6559982,740.28,DPS,-8.748169899,115.1669998,123.98,Domestic
+22,Bogot,Medellín,31279,"Avianca, LATAM Airlines, VivaAir",BOG,4.70159,-74.1469,4.99,MDE,6.16454,-75.4231,380.64,Domestic
+23,Shanghai,Shenzhen,29401,"Spring Airlines, China Southern Airlines, Xianmen Airlines, China Eastern Airlines, Shenzhen Airlines",SHA,31.19790077,121.3359985,6340.5,SZX,22.63929939,113.810997,2050,Domestic
+24,Bangkok,Singapore,29314,"Singapore Airlines, Thai Airways, Scoot, Jetstar Asia",BKK,13.68109989,100.7470016,1568.74,SIN,1.35019,103.994003,716.1,International
+25,Bangkok,Hong Kong,29238,"Cathay Pacific, Thai Airways, Hong Kong Airlines, Emirates,HK Express",BKK,13.68109989,100.7470016,1568.74,HKG,22.308901,113.915001,1108,International
+26,Beijing,Shanghai,29233,"Air China, China Eastern Airlines, China Southern Airlines, Hainan Airlines, Xiamen Airlines",PEK,40.08010101,116.5849991,16410.5,SHA,31.19790077,121.3359985,6340.5,Domestic
+27,Hong Kong,Singapore,29191,"Cathay Pacific Airways, Singapore Airlines, Scoot, Jetstar Asia",HKG,22.308901,113.915001,1108,SIN,1.35019,103.994003,716.1,International
+28,Hong Kong,Beijing,29135,"Air China, Hong Kong Airlines, Cathay Pacific, China Southern Airlines",HKG,22.308901,113.915001,1108,PEK,40.08010101,116.5849991,16410.5,International
+29,Dublin,London,28946,"Aer Lingus, British Airways",DUB,53.421299,-6.27007,114.99,LHR,51.4706,-0.461941,1572,International
+30,Jakarta,Makassar,28903,"Garuda Indonesia, Citilink, Lion Air, Batik Air",CGK,-6.12556982,106.6559982,740.28,UPG,-5.0777,119.5495,175.77,Domestic
+31,New Delhi,Bengaluru,28716,"AirAsia India, Air India, GoAir, IndiGo, Jet Airways, SpiceJet, Vistara",DEL,28.5665,77.103104,1484,BLR,13.1979,77.706299,741,Domestic
+32,Narita,Taoyuan,28636,"China Airlines, EVA Air, Peach Aviation, Tigerair Taiwan, Japan Airlines, ANA, Cathay Pacific, Jetstar Japan",NRT,35.76470184,140.3860016,213.84,TPE,25.0777,121.233002,1220.95,International
+33,Dubai International City,Kuwait,28629,"Emirates, Flydubai, Kuwait Airways, Jazeera Airways",DXB,25.25279999,55.36439896,8.2,KWI,29.22660065,47.96889877,17818,International
+34,New York,London,28106,"British Airways, Virgin Atlantic, American Airlines, Delta Air Lines",LGA,40.77719879,-73.87259674,141300,LHR,51.4706,-0.461941,1572,International
+35,Osaka,Pudong,27676,"China Eastern Airlines, Air China, Juneyao Airlines, All Nippon Airways, Spring Airlines",ITM,34.78549957,135.4380035,223,PVG,31.14340019,121.8050003,1210.4,International
+36,Cuzco,Lima,27092,"Avianca, LATAM PerÃº, Peruvian Airlines",CUZ,-13.53569984,-71.938797,385.1,LIM,-12.0219,-77.114305,2672.3,Domestic
+37,Incheon,Narita,27077,"Asiana Airlines, Korean Air, Jeju Airlines, Eastar Jet, Jin Air, T'way Air, Japan Airlines",ICN,37.46910095,126.4509964,1029.43,NRT,35.76470184,140.3860016,213.84,International
+38,Chicago,Toronto,26695,"Air Canada, United Airlines, American Airlines",ORD,41.9786,-87.9048,606.1,YYZ,43.67720032,-79.63059998,630,International
+39,Amsterdam,London,26390,"KLM, British Airways",AMS,52.308601,4.76389,219,LHR,51.4706,-0.461941,1572,International
+40,Los Angeles,New York,26286,"American Airlines, Delta Air Lines, JetBlue Airways, Alaska Airlines",LAX,33.94250107,-118.4079971,1301.97,LGA,40.77719879,-73.87259674,1214.45,Domestic
+41,Hong Kong,Manila,26270,"Cebu Pacific Air, Cathay Pacific, Philippine Airlines, Philippine AirAsia",HKG,22.308901,113.915001,1108,MNL,14.5086,121.019997,42.88,International
+42,Frankfurt,London,26158,"British Airways, Lufthansa",FRA,50.033333,8.570556,248.31,LHR,51.4706,-0.461941,1572,International
+43,Cairo,Jeddah,25396,"Saudi Arabian Airlines, Egyptair, Flynas",CAI,30.12190056,31.40559959,453,JED,21.6796,39.156502,1600,International
+44,Stockholm,Oslo,25204,"Norwegian Air Shuttle, SAS",ARN,59.65190125,17.91860008,188,FBU,59.89580154,10.6171999,454,International
