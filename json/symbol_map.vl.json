@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "title": "Busiest Airport in 2018",
+  "background": "floralwhite",
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/peijiunchong/FIT3179_Week9/main/data/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/peijiunchong/FIT3179_Week9/main/data/top50_flights-airport.csv"
+      },
+      "mark": {"type": "circle"},
+      "encoding": {
+        "longitude": {"field": "ori_longitude", "type": "quantitative"},
+        "latitude": {"field": "ori_latitude", "type": "quantitative"},
+        "size":{
+          "field": "Distance (km)",
+          "type":"quantitative",
+          "scale": {"domain": [100, 2500]}
+        },
+        "color":{
+          "field": "Distance (km)",
+          "type": "quantitative",
+          "title": "Distance(km)",
+          "scale": {"scheme": "redpurple", 
+                    "domain": [100, 2500]}
+        },
+        "tooltip": [
+          {"field": "Airport 1", "type": "nominal"},
+          {"field": "2018"},
+          {"field": "Distance (km)"}
+        ]
+      }
+    }
+  ]
+}
