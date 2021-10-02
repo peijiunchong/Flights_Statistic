@@ -2,11 +2,12 @@
 Afghanistan,369,23,293,0
 Algeria,514,29,484,0
 Angola,328,13,315,0
-Antartica,257,20,237,0
+Antarctica,257,20,237,0
 Arabia,644,39,605,0
 Argentina,349,31,316,2
 Armenia,77,9,68,0
 Atlantic Ocean,392,42,350,0
+Australia,374,28,346,0
 Austria,83,8,75,0
 Azerbaijan,109,4,104,0
 Bahrain,143,8,135,0
@@ -34,7 +35,7 @@ Cyprus,126,9,117,0
 Czechoslovakia,299,22,277,0
 Denmark,55,5,50,0
 DominicanRepublic,291,18,273,0
-DRCongo,376,10,87,279
+Dem. Rep. Congo,376,10,87,279
 Eastern Mediterranean Sea,66,10,56,0
 East Germany,228,17,211,0
 Ecuador,368,35,274,59
@@ -48,6 +49,7 @@ French Polynesia,78,10,68,0
 Georgia,312,22,230,0
 Germany,71,11,60,0
 Greece,482,37,445,0
+Greenland,43,24,19,0
 Guadeloupe,63,11,52,0
 Guatemala,93,6,87,0
 Gulf of Guinea of Ivoire,169,10,159,0
@@ -62,6 +64,7 @@ Italy,642,86,552,4
 Japan,1572,86,1433,53
 JavaSea,162,7,155,0
 Karawang Regency,189,8,181,0
+Kazakhstan ,95,5,90,0
 Kenya,111,8,97,6
 Kyrgyzstan,65,0,65,0
 Lebanon,150,18,132,0
@@ -75,6 +78,7 @@ Massachusetts,217,15,202,0
 Mauritania,80,4,76,0
 Mexico,319,24,294,1
 Morocco,695,56,639,0
+Mongolia,109,16,124,0
 Myanmar,122,14,108,0
 Namibia,123,12,111,0
 Nepal,331,30,301,0
@@ -86,23 +90,23 @@ Norway,141,11,130,0
 PacificOcean,232,29,203,0
 Pakistan,482,31,450,1
 Papua,54,5,49,0
-PapuaNewGuinea,61,11,0,50
+Papua New Guinea,61,11,0,50
+Paraguay,41,18,30,0
 Peru,688,63,623,2
 Philippines,418,21,343,4
 Poland,323,26,297,0
 Portugal,329,31,298,0
-RepublicofMacedonia,199,12,187,0
+Republic of Macedonia,199,12,187,0
 Romania,60,10,50,0
 Russia,1472,113,1310,50
 Russian SFSR,269,23,246,0
 Saudi Arabia,405,32,373,0
 Senegal,63,8,55,0
 Somalia,50,6,44,0
-SouthJorea,59,3,12,44
-SouthKorea,303,20,283,0
-SouthSudan,60,3,57,0
+South Korea,362,23,295,44
+S. Sudan,60,3,57,0
 Spain,1746,97,1648,1
-SriLanka,618,38,580,0
+Sri Lanka,618,38,580,0
 Sudan,311,22,238,0
 Surinam,176,9,167,0
 Switzerland,188,10,178,0
