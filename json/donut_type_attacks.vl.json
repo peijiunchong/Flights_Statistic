@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "title": "Causes of Incidents and Accidents of Air Flights.",
+  "data": {
+    "values": [
+      {
+        "category": "EXG",
+        "value": 12,
+        "description": "Attacked using ground-based weapons"
+      },
+      {
+        "category": "MIL",
+        "value": 68,
+        "description": "Military (accident/incident)"
+      },
+      {
+        "category": "COM",
+        "value": 441,
+        "description": "Commercial (accident/incident)"
+      },
+      {"category": "INB", "value": 14, "description": "Bombing"},
+      {
+        "category": "EXS",
+        "value": 13,
+        "description": "Attacked by other aircraft"
+      },
+      {"category": "INH", "value": 9, "description": "Hijacking"}
+    ]
+  },
+  "mark": {"type": "arc", "innerRadius": 130},
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {
+      "field": "description",
+      "type": "nominal",
+      "title": "Type of Attacks"
+    },
+    "tooltip": [
+      {"field": "category", "title": "Type"},
+      {"field": "description", "title": "Description"},
+      {"field": "value", "title": "Number of accidents"}
+    ]
+  },
+  "config": {}
+}
