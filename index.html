@@ -69,34 +69,34 @@
    
      </div> <!-- end page -->
       
-    <script type="text/javascript">
-        var vis1 = "json/isotype.vl.json";
-        var vis2= "json/choropleth.vl.json";
-        var vis3= "json/donut_type_deaths.vl.json";
-        var vis4= "json/radar_type_attacks.vl.json";
-        var vis5= "json/flow_map.vl.json";
-    
-    
+     <script type="text/javascript">
+        var specVis1 = "json/isotype.vl.json";
+        var specVis2= "json/choropleth.vl.json";
+        var specVis3= "json/donut_type_deaths.vl.json";
+        var specVis4= "json/radar_type_attacks.vl.json";
+        var specVis5= "json/flow_map.vl.json";
+      
+      
         vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
-    
-        vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      
+         vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
-    
+      
         vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
-    
-        vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      
+          vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
-    
+      
         vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
-        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
-
-    </script>
+      
+      </script>
 </body>
 </html>
