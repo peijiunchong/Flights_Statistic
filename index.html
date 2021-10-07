@@ -33,12 +33,7 @@
    
        <!-- pure grid group -->
        <div class="pure-g">
-           <div class="pure-u-1-3">
-             <div class="description description-left">
-               <h2>Busiest Airport According to Number of Flights</h2>
-               <p>The world's busiest airports by air traffic are measured by total number of flights. Due to the global effect of the COVID-19 pandemic, Guangzhou Baiyun International Airport was the world's busiest airport in 2020, taking it from Hartsfield–Jackson Atlanta International Airport, which had been the world's busiest airport every year from 1998 to 2019. As of 2019, six countries have at least two airports in the top fifty, with the United States at fifteen and Greater China at eleven; Germany, India, Japan, Spain, and the United Kingdom have two airports each. </p>
-             </div>
-           </div>
+           
            <div class="pure-u-2-3">
              <div id="vis1"></div>
            </div>
@@ -48,17 +43,54 @@
        <!-- pure grid group -->
        <div class="pure-g">
            
-           <div class="pure-u-1-3">
-             <div class="description description-right">
-               <h2>Causes of Incidents and Accidents of Air Flights</h2>
-               <p>Entries in this list involve passenger or cargo aircraft that are operating commercially and meet this list's size criteria—passenger aircraft with a seating capacity of at least 10 passengers, or commercial cargo aircraft of at least: 20,000 lb (9,100 kg).</p>
-             </div>
-            </div>
+          
             <div class="pure-u-2-3">
               <div id="vis2" ></div>
             </div>
        </div>
        <!-- end pure grid group -->
+
+       <!-- pure grid group -->
+       <div class="pure-g">
+           
+          
+        <div class="pure-u-2-3">
+          <div id="vis3" ></div>
+        </div>
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+                
+                
+            <div class="pure-u-2-3">
+            <div id="vis4" ></div>
+            </div>
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+                
+                
+            <div class="pure-u-2-3">
+            <div id="vis5" ></div>
+            </div>
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+                
+                
+          <div class="pure-u-2-3">
+            <div id="vis6" ></div>
+          </div>
+        </div>
+        <!-- end pure grid group -->
+
+
      
        <div class="pure-g">
          <div class="pure-u-1-1 small-font">
@@ -75,6 +107,7 @@
         var specVis3= "json/donut_type_deaths.vl.json";
         var specVis4= "json/radar_type_attacks.vl.json";
         var specVis5= "json/flow_map.vl.json";
+        var specVis6 = "json/symbol_map.vl.json";
       
       
         vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
@@ -94,6 +127,10 @@
         }).catch(console.error);
       
         vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis6', specVis6, {"actions": false}).then(function(result) {
           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
       
