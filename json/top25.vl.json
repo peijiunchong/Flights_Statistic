@@ -1,0 +1,128 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/top25_accidents.csv"
+  },
+  "hconcat": [
+    {
+      "width": 600,
+      "height": 600,
+      "data": {
+        "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "projection": {"type": "equalEarth"},
+      "layer": [
+        {
+          "transform": [{"calculate": "datum.properties.NAME", "as": "note"}],
+          "mark": {"type": "geoshape", "fill": "whitesmoke", "stroke": "white"},
+          "encoding": {"tooltip": {"field": "note"}}
+        },
+        {
+          "params": [{"name": "select", "select": {"type": "point"}}],
+          "transform": [
+            {
+              "lookup": "properties.NAME",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/top25_accidents.csv"
+                },
+                "key": "country",
+                "fields": ["total", "accidents"]
+              }
+            }
+          ],
+          "mark": {"type": "geoshape", "stroke": "white"},
+          "encoding": {
+            "color": {
+              "field": "total",
+              "type": "quantitative",
+              "scale": {"scheme": "goldgreen"},
+              "legend": null
+            },
+            "fillOpacity": {
+              "condition": {"param": "select", "value": 1},
+              "value": 0.3
+            },
+            "stroke": {"value": "white"},
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "type": "nominal",
+                "title": "Country"
+              },
+              {
+                "field": "total",
+                "type": "quantitative",
+                "title": "Total Fatalitites"
+              },
+              {
+                "field": "accidents",
+                "type": "quantitative",
+                "title": "Total Accidents"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "resolve": {
+        "legend": {"color": "independent"},
+        "scale": {"color": "independent"}
+      },
+      "vconcat": [
+        {
+          "width": 400,
+          "height": 200,
+          "mark": {"type": "bar", "fill": "#8ca252", "cursor": "pointer"},
+          "encoding": {
+            "x": {"field": "country", "type": "ordinal", "sort": "-y"},
+            "y": {
+              "field": "accidents",
+              "type": "quantitative",
+              "title": "Accidents"
+            },
+            "fillOpacity": {
+              "condition": {"param": "select", "value": 1},
+              "value": 0.3
+            },
+            "tooltip": [
+              {
+                "field": "accidents",
+                "type": "quantitative",
+                "title": "Total Accidents"
+              }
+            ]
+          }
+        },
+        {
+          "width": 400,
+          "height": 200,
+          "mark": {"type": "bar", "fill": "#e7ba52", "cursor": "pointer"},
+          "encoding": {
+            "y": {
+              "field": "total",
+              "type": "quantitative",
+              "title": "Fatalitites"
+            },
+            "x": {"field": "country", "type": "nominal", "sort": "-y"},
+            "fillOpacity": {
+              "condition": {"param": "select", "value": 1},
+              "value": 0.3
+            },
+            "tooltip": [
+              {
+                "field": "total",
+                "type": "quantitative",
+                "title": "Total Fatalities"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {"scale": {"bandPaddingInner": 0.2}}
+}
