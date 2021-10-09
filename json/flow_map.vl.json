@@ -14,68 +14,63 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/busiest_airport.csv"
+        "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/flight-route.csv"
       },
-      "mark": {
-        "type": "circle"
-      },
+      "mark": {"type": "circle"},
       "encoding": {
-        "longitude": {"field": "longitude", "type": "quantitative"},
-        "latitude": {"field": "latitude", "type": "quantitative"},
-        "size": {"value":150},
-        "color":{"value": "red"},
+        "longitude": {"field": "to_long", "type": "quantitative"},
+        "latitude": {"field": "to_lat", "type": "quantitative"},
+        "size": {"value": 8},
+        "color": {"value": "red"},
         "opacity": {"value": 0.5},
-        "fill": {"value": "darkblue"},
         "tooltip": [
-          {"field": "airport", "type": "nominal", "title": "Airport Name"},
-          {"field": "city", "type": "nominal"},
-          {"field": "country", "type": "nominal"},
-          {"field": "iata", "type": "nominal"}
+          {"field": "to_airport", "type": "nominal", "title": "Airport"},
+          {"field": "to_city", "type": "nominal"},
+          {"field": "to_country", "type": "nominal"}
         ]
       }
     },
     {
-      "data": {"url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/busiest_air_routes.csv"},
-      "transform": [
-        {
-          "lookup": "origin",
-          "from": {
-            "data" : {
-              "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/busiest_airport.csv" 
-            },
-            "key": "iata",
-            "fields": ["latitude", "longitude"]
-          },
-          "as": ["ori_latitude", "ori_longitude"]
-        },
-        {
-          "lookup": "destination",
-          "from":{
-            "data":{
-              "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/busiest_airport.csv"
-            },
-            "key": "iata",
-            "fields": ["latitude", "longitude"]
-          },
-          "as":["dest_latitude", "dest_longitude"]
-        }
-      ],
+      "data": {
+        "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/flight-route.csv"
+      },
+      "mark": {"type": "circle"},
+      "encoding": {
+        "longitude": {"field": "from_long", "type": "quantitative"},
+        "latitude": {"field": "from_lat", "type": "quantitative"},
+        "size": {"value": 8},
+        "color": {"value": "red"},
+        "opacity": {"value": 0.5},
+        "tooltip": [
+          {"field": "from_airport", "type": "nominal", "title": "Airport"},
+          {"field": "from_city", "type": "nominal"},
+          {"field": "from_country", "type": "nominal"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/flight-route.csv"
+      },
       "mark": "rule",
       "encoding": {
-        "longitude": {"field": "ori_longitude", "type": "quantitative"},
-        "latitude": {"field": "ori_latitude", "type": "quantitative"},
-        "longitude2": {"field": "dest_longitude"},
-        "latitude2": {"field": "dest_latitude"},
-        "size": {"value": 4},
+        "longitude": {"field": "from_long", "type": "quantitative"},
+        "latitude": {"field": "from_lat", "type": "quantitative"},
+        "longitude2": {"field": "to_long"},
+        "latitude2": {"field": "to_lat"},
         "stroke": {"value": "black"},
-        "strokeOpacity": {"value": 0.5},
+        "strokeOpacity": {"value": 0.05},
         "tooltip": [
-          {"field": "City 1", "type": "nominal"},
-          {"field": "City 2", "type": "nominal"},
-          {"field": "Flights", "type": "quantitative", "title": "Number of Flights"}
+          {"field": "airline", "type": "nominal", "title": "Airline"},
+          {
+            "field": "airline_country",
+            "type": "nominal",
+            "title": "Airline Country"
+          },
+          {"field": "distance", "type": "nominal", "title": "Distance(km)"}
         ]
       }
     }
-    
-  ]
+  ],
+  "config": {}
 }
