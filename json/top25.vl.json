@@ -20,7 +20,6 @@
           "encoding": {"tooltip": {"field": "note"}}
         },
         {
-          "params": [{"name": "select", "select": {"type": "point"}}],
           "transform": [
             {
               "lookup": "properties.NAME",
@@ -29,8 +28,14 @@
                   "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/top25_accidents.csv"
                 },
                 "key": "country",
-                "fields": ["total", "accidents"]
+                "fields": ["total", "accidents", "country"]
               }
+            }
+          ],
+          "params": [
+            {
+              "name": "select",
+              "select": {"type": "point", "encodings": ["color"]}
             }
           ],
           "mark": {"type": "geoshape", "stroke": "white"},
@@ -77,6 +82,9 @@
           "width": 400,
           "height": 200,
           "mark": {"type": "bar", "fill": "#8ca252", "cursor": "pointer"},
+          "params": [
+            {"name": "select", "select": {"type": "point", "encodings": ["x"]}}
+          ],
           "encoding": {
             "x": {"field": "country", "type": "ordinal", "sort": "-y"},
             "y": {
@@ -101,6 +109,9 @@
           "width": 400,
           "height": 200,
           "mark": {"type": "bar", "fill": "#e7ba52", "cursor": "pointer"},
+          "params": [
+            {"name": "select", "select": {"type": "point", "encodings": ["x"]}}
+          ],
           "encoding": {
             "y": {
               "field": "total",
