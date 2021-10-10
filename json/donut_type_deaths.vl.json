@@ -2,6 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple radial chart with embedded data.",
   "title": "",
+  "background": "#f9f9f9",
   "width": 400,
   "height": 500,
   "data": {

@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
+  "width": 1000,
   "height": 600,
+  "background": "#f9f9f9",
   "title": "Busiest Airport in 2018 according to Number of Flights",
   "projection": {"type": "equalEarth"},
   "layer": [

@@ -4,10 +4,11 @@
   "data": {
     "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/top25_accidents.csv"
   },
+  "background": "#f9f9f9",
   "hconcat": [
     {
-      "width": 600,
-      "height": 600,
+      "width": 800,
+      "height": 800,
       "data": {
         "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
@@ -80,7 +81,7 @@
       "vconcat": [
         {
           "width": 400,
-          "height": 200,
+          "height": 250,
           "mark": {"type": "bar", "fill": "#8ca252", "cursor": "pointer"},
           "params": [
             {"name": "select", "select": {"type": "point", "encodings": ["x"]}}
@@ -107,7 +108,7 @@
         },
         {
           "width": 400,
-          "height": 200,
+          "height": 250,
           "mark": {"type": "bar", "fill": "#e7ba52", "cursor": "pointer"},
           "params": [
             {"name": "select", "select": {"type": "point", "encodings": ["x"]}}

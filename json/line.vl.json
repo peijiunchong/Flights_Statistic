@@ -4,6 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/air_passenger_traffic_evolution.csv"
   },
+  "background": "#f9f9f9",
   "width": 600,
   "height": 400,
   "encoding": {
