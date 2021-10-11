@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A dual axis chart, created by setting y's scale resolution to `\"independent\"`",
+  "width": 500,
+  "height": 550,
+  "background": "#f9f9f9",
+  "data": {
+    "values": [
+      {"month": "01/20", "cargo-flights": 32, "growth": 2},
+      {"month": "02/20", "cargo-flights": 29, "growth": 4},
+      {"month": "03/20", "cargo-flights": 35, "growth": 13},
+      {"month": "04/20", "cargo-flights": 44, "growth": 34}
+    ]
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "month",
+      "field": "month",
+      "axis": {"format": "%b", "title": null},
+      "type": "ordinal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {"opacity": 0.3, "type": "bar", "color": "#85abc5", "size": 50},
+      "encoding": {
+        "y": {
+          "field": "cargo-flights",
+          "type": "quantitative",
+          "title": "Number of Cargo Flights (Thousands)",
+          "axis": {"titleColor": "#85abc5"}
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "type": "ordinal",
+            "timeUnit": "month",
+            "title": "Month"
+          },
+          {
+            "field": "cargo-flights",
+            "type": "quantitative",
+            "title": "Cargo Flights (Thousands)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "stroke": "#df438b",
+        "type": "line",
+        "point": {"fill": "white", "filled": false}
+      },
+      "encoding": {
+        "y": {
+          "aggregate": "average",
+          "field": "growth",
+          "scale": {"domain": [-5, 35]},
+          "title": "YoY growth (%)",
+          "axis": {"titleColor": "#df438b"}
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "type": "ordinal",
+            "timeUnit": "month",
+            "title": "Month"
+          },
+          {
+            "field": "growth",
+            "type": "quantitative",
+            "title": "Growth Percentage (%)"
+          }
+        ]
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {}
+}

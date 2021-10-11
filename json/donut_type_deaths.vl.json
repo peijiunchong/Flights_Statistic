@@ -4,7 +4,7 @@
   "title": "",
   "background": "#f9f9f9",
   "width": 400,
-  "height": 500,
+  "height": 300,
   "data": {
     "values": [
       {"type": "crew", "value": 4029},
@@ -15,7 +15,7 @@
   "layer": [
     {"mark": {"type": "arc", "innerRadius": 50, "stroke": "#ffffff"}},
     {
-      "mark": {"type": "text", "radiusOffset": 20},
+      "mark": {"type": "text", "radiusOffset": 20, "size": 15},
       "encoding": {"text": {"field": "type", "type": "nominal"}}
     }
   ],
@@ -25,11 +25,11 @@
       "field": "value",
       "scale": {"type": "symlog", "zero": true, "rangeMin": 20}
     },
-    "color": {"field": "type", "type": "nominal", "title": "Type of Deaths"},
+    "color": {"field": "type", "type": "nominal", "title": "Type of Deaths", "legend": {"labelFontSize": 20, "titleFontSize": 20}},
     "tooltip": [
       {"field": "type", "type": "nominal"},
       {"field": "value", "type": "quantitative"}
     ]
   },
-  "config": {}
+  "config": {"view": {"stroke": ""}}
 }

@@ -22,59 +22,70 @@
 <body>
 
  <div class="page">
-   <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-1">
-        <h1>Air Flight and it's Statistics</h1>
-      </div>
-    </div>
-  <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
-        <div class="pure-u-1-3">
-          <div class="description description-left">
-            <h2>Global air traffic</h2>
-            <p>The number of flights performed globally by the airline industry increased steadily since the early 2000s and reached 38.9 million in 2019. However, due to the coronavirus pandemic, the number of flights dropped to 16.9 million in 2020.</p>
-          </div>
-        </div>
-        <div class="pure-u-2-3">
-          <div id="vis1" class="vis-container"></div>
-        </div>
+      <div class="pure-u-2-3">
+        <p>FIT3179 Data Visualization 2</p>
+        <h1 style="color:red">Air Flight and it's Statistics</h1>
+        <h3>This page shows the distribution and statistics of Air Traffic of the world.</h3>
+      </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
-        <div class="pure-u-2-3">
-          <div id="vis2"  class="vis-container"></div>
-        </div>
-        <div class="pure-u-1-3">
-          <div class="description description-right">
-            <h2>Flight safety</h2>
-            <p>This visualization shows the top 25 geographical regions having the highest number of fatal civil airliner accidents from 1945 until now.</p>
-            <p>Military accidents, corporate jets, hijackings and other criminal occurrences are not included.</p>
+        <div class="pure-u-1-1">
+          <div class="description description-left">
+            <h2>Global air traffic 📌</h2>
+            <p style="font-size: larger;">The number of flights performed globally by the airline industry increased steadily since the early 2000s and reached 38.9 million in 2019. However, due to the coronavirus pandemic, the number of flights dropped to 16.9 million in 2020.</p>
+            <br>
+            <br>
           </div>
         </div>
-      
+        <div class="pure-u-1-1">
+          <div id="vis1" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="description description-left">
+          <h2>Flight safety 📌</h2>
+          <p style="font-size: larger;">This visualization shows the top 25 geographical regions having the highest number of fatal civil airliner accidents from 1945 until now.</p>
+          <p style="font-size: larger;">Note** Military accidents, corporate jets, hijackings and other criminal occurrences are not included.</p>
+          <br>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <div id="vis2" class="vis-container"></div>
+      </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-2-3">
-        <div id="vis3"  class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-3">
-        <div class="description description-right">
+        <div class="description description-left">
           <h2>Reasons of Flight Accidents and Incidents?</h2>
-          <p>✈️ </p>
-          <p>💣 </p>
-          <p>💥 </p>
-          <p>🛬 </p>
-          <p>🛩️ </p>
+          <p style="font-size: larger;">✈️EXG Attacked using ground-based weapons</p>
+          <p style="font-size: larger;">💣INE Bombing</p>
+          <p style="font-size: larger;">💥COM Commercial (accident/incident)</p>
+          <p style="font-size: larger;">🛬EXS Attacked by other aircraft</p>
+          <p style="font-size: larger;">🛩️MIL Military (accident/incident)</p>
+          <p style="font-size: larger;">🛫 INH Hijacking</p>
         </div>
       </div>
+      <div class="pure-u-1-3">
+        <div id="vis3"></div>
+      </div>
+      <br>
     </div>
     <!-- end pure grid group -->
 
@@ -89,35 +100,36 @@
           <p></p>
         </div>
       </div>
+      <br>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
-      <div class="pure-u-2-3">
-        <div id="vis5"  class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-3">
-        <div class="description description-right">
-          <h2>World Air Passenger Traffic evolution, 1980-2020</h2>
-          <h3>⬇️ -49% to -50%</h3>
-          <p>decline in world total passengers in 2021 vs. 2019</p>
-
-          <h3>⬇️ -60%</h3>
-          <p>decline in world total passengers in 2020 vs. 2019</p>
+      <div class="pure-u-1-1">
+        <div>
+          <h2>World Air Passenger Traffic evolution, 1980-2020 📌</h2>
         </div>
       </div>
+      <div class="pure-u-1-2">
+        <h3>⬇️ -49% to -50%</h3>
+        <p>decline in world total passengers in 2021 vs. 2019</p>
+      </div>
+      <div class="pure-u-1-2">
+        <h3>⬇️ -60%</h3>
+        <p>decline in world total passengers in 2020 vs. 2019</p>
+      </div>
+      <div class="pure-u-1-1">
+        <div id="vis5"  class="vis-container"></div>
+      </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
-      <div class="pure-u-2-3">
-        <div id="vis6"  class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-3">
-        <div class="description description-right">
-          <h2>Impact of <COVID-19>COVID-19</COVID-19> on Passenger traffic and revenues by region for 2020</h2>
+      <div class="pure-u-1-1">
+        <div class="description description-left">
+          <h2>Impact of COVID-19 on Passenger traffic and revenues by region for 2020 📌</h2>
           <p>air passenger traffic</p>
           <p>airports</p>
           <p>airlines</p>
@@ -126,32 +138,35 @@
           <p>global economy</p>
         </div>
       </div>
+      <div class="pure-u-1-1">
+        <div id="vis6"  class="vis-container"></div>
+      </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
-      <div class="pure-u-2-3">
-        <div id="vis7"  class="vis-container"></div>
-      </div>
+      
       <div class="pure-u-1-3">
-        <div class="description description-right">
-          <h2>Cargo Flights in 2020</h2>
+        <div class="description description-left">
+          <h2>Cargo Flights in 2020 📌</h2>
           <p>As of 18 May 2020, 100% of all world destinations have travel restrictions. About 185 (85%) destinations have completely or partially closed their borders, while 11 destinations (5%) have suspended completely or partially international flights.</p>
           <p>In contrast to the fall in passenger traffic, cargo flights surged with the increased cargo-only operations using passenger aircraft.</p>
           <p>This can be seen in the graph since March 2020 and a sudden increase in April 2020 with a year over year growth of 35%.</p>
         </div>
       </div>
-    </div>
-    <!-- end pure grid group -->
-  
-    <div class="pure-g">
-      <div class="pure-u-1-1 small-font">
-        <p>This visualisation is created by <a href="https://github.com/KadekSatriadi" target="_blank">Kadek Satriadi</a>. The datasource is <a href="#"" target="_blank">some data repository online</href>.</p>
+      <div class="pure-u-2-3">
+        <div id="vis7"  class="vis-container"></div>
       </div>
     </div>
-  
+    <!-- end pure grid group -->
 
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is created by <a href="https://github.com/KadekSatriadi" target="_blank">Chong Pei Jiun</a>. The datasource is some data repository online.</p>
+      </div>
+    </div>
+    
   </div> <!-- end page -->
       
      <script type="text/javascript">

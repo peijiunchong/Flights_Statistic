@@ -12,42 +12,42 @@
       "name": "table",
       "values": [
         {
-          "key": "EXG",
+          "key": "✈️ EXG",
           "value": 12,
           "description": "Attacked using ground-based weapons",
           "category": 0,
           "log_value": 1.08
         },
         {
-          "key": "MIL",
+          "key": "🛩️ MIL",
           "value": 68,
           "description": "Military (accident/incident)",
           "category": 0,
           "log_value": 1.83
         },
         {
-          "key": "COM",
+          "key": "💥 COM",
           "value": 441,
           "description": "Commercial (accident/incident)",
           "category": 0,
           "log_value": 2.64
         },
         {
-          "key": "INB",
+          "key": "💣 INB",
           "value": 14,
           "description": "Bombing",
           "category": 0,
           "log_value": 1.15
         },
         {
-          "key": "EXS",
+          "key": "🛬 EXS",
           "value": 13,
           "description": "Attacked by other aircraft",
           "category": 0,
           "log_value": 1.11
         },
         {
-          "key": "INH",
+          "key": "🛫 INH",
           "value": 9,
           "description": "Hijacking",
           "category": 0,
@@ -126,7 +126,8 @@
               "text": {"signal": "datum.datum.value"},
               "align": {"value": "center"},
               "baseline": {"value": "middle"},
-              "fill": {"value": "black"}
+              "fill": {"value": "black"},
+              "fontSize": {"value": 15}
             }
           }
         }
@@ -171,7 +172,8 @@
             {"value": "bottom"}
           ],
           "fill": {"value": "black"},
-          "fontWeight": {"value": "bold"}
+          "fontWeight": {"value": "bold"},
+          "fontSize": {"value": 15}
         }
       }
     },
