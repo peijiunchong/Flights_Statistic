@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A dual axis chart, created by setting y's scale resolution to `\"independent\"`",
-  "width": 500,
+  "width": "container",
   "height": 550,
   "background": "#f9f9f9",
   "data": {
@@ -16,19 +16,19 @@
     "x": {
       "timeUnit": "month",
       "field": "month",
-      "axis": {"format": "%b", "title": null},
+      "axis": {"format": "%b", "title": null, "labelFontSize": 15},
       "type": "ordinal"
     }
   },
   "layer": [
     {
-      "mark": {"opacity": 0.3, "type": "bar", "color": "#85abc5", "size": 50},
+      "mark": {"opacity": 0.3, "type": "bar", "color": "#4F6973", "size": 50},
       "encoding": {
         "y": {
           "field": "cargo-flights",
           "type": "quantitative",
           "title": "Number of Cargo Flights (Thousands)",
-          "axis": {"titleColor": "#85abc5"}
+          "axis": {"titleColor": "#4F6973", "titleFontSize": 20, "titlePadding": 20, "labelFontSize": 15}
         },
         "tooltip": [
           {
@@ -47,9 +47,9 @@
     },
     {
       "mark": {
-        "stroke": "#df438b",
+        "stroke": "#D93644",
         "type": "line",
-        "point": {"fill": "white", "filled": false}
+        "point": {"fill": "white", "filled": false, "stroke": "#D93644", "strokeWidth": 10}
       },
       "encoding": {
         "y": {
@@ -57,7 +57,7 @@
           "field": "growth",
           "scale": {"domain": [-5, 35]},
           "title": "YoY growth (%)",
-          "axis": {"titleColor": "#df438b"}
+          "axis": {"titleColor": "#D93644", "titleFontSize": 20, "titlePadding": 20, "labelFontSize": 15}
         },
         "tooltip": [
           {

@@ -5,10 +5,10 @@
     "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/top25_accidents.csv"
   },
   "background": "#f9f9f9",
-  "hconcat": [
+  "vconcat": [
     {
-      "width": 800,
-      "height": 800,
+      "width": 1000,
+      "height": 450,
       "data": {
         "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
@@ -78,20 +78,22 @@
         "legend": {"color": "independent"},
         "scale": {"color": "independent"}
       },
-      "vconcat": [
+      "hconcat": [
         {
-          "width": 350,
+          "width": 500,
           "height": 250,
           "mark": {"type": "bar", "fill": "#8ca252", "cursor": "pointer"},
           "params": [
             {"name": "select", "select": {"type": "point", "encodings": ["x"]}}
           ],
           "encoding": {
-            "x": {"field": "country", "type": "ordinal", "sort": "-y"},
+            "x": {"field": "country", "type": "ordinal", "sort": "-y", "title": "Country",
+              "axis": {"labelFontSize": 15, "title": null}},
             "y": {
               "field": "accidents",
               "type": "quantitative",
-              "title": "Accidents"
+              "title": "Accidents",
+              "axis": {"labelFontSize": 15, "titleFontSize": 15}
             },
             "fillOpacity": {
               "condition": {"param": "select", "value": 1},
@@ -107,7 +109,7 @@
           }
         },
         {
-          "width": 350,
+          "width": 500,
           "height": 250,
           "mark": {"type": "bar", "fill": "#e7ba52", "cursor": "pointer"},
           "params": [
@@ -117,9 +119,11 @@
             "y": {
               "field": "total",
               "type": "quantitative",
-              "title": "Fatalitites"
+              "title": "Fatalitites",
+              "axis": {"labelFontSize": 15, "titleFontSize": 15}
             },
-            "x": {"field": "country", "type": "nominal", "sort": "-y"},
+            "x": {"field": "country", "type": "nominal", "sort": "-y", "title": "Country",
+              "axis": {"labelFontSize": 15, "title":null}},
             "fillOpacity": {
               "condition": {"param": "select", "value": 1},
               "value": 0.3

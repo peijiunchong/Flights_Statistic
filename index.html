@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Multiple Visualisations | An Example</title>
+  <title>Flight Statistics</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -27,7 +27,7 @@
     <div class="pure-g">
       <div class="pure-u-2-3">
         <p>FIT3179 Data Visualization 2</p>
-        <h1 style="color:red">Air Flight and it's Statistics</h1>
+        <h1 style="color: #D33F00; font-size: 50px;">Air Flight and it's Statistics</h1>
         <h3>This page shows the distribution and statistics of Air Traffic of the world.</h3>
       </div>
     </div>
@@ -38,7 +38,16 @@
         <div class="pure-u-1-1">
           <div class="description description-left">
             <h2>Global air traffic 📌</h2>
-            <p style="font-size: larger;">The number of flights performed globally by the airline industry increased steadily since the early 2000s and reached 38.9 million in 2019. However, due to the coronavirus pandemic, the number of flights dropped to 16.9 million in 2020.</p>
+            <div style="font-size: 20px; line-height: 35px;">
+              <span>The number of flights performed globally by the airline industry </span>
+              <span style="color: brown;"><b>increased steadily</b></span>
+              <span>since the </span>
+              <span style="color: darkblue;"><b>early 2000s </b></span>
+              <span>and reached </span>
+              <span style="color: darkblue;"><b>38.9 million in 2019. </b></span>
+              <span>However, due to the coronavirus pandemic, the number of flights dropped to </span>
+              <span style="color: darkblue;"><b>16.9 million in 2020. </b></span>
+            </div>
             <br>
             <br>
           </div>
@@ -57,9 +66,23 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div class="description description-left">
-          <h2>Flight safety 📌</h2>
-          <p style="font-size: larger;">This visualization shows the top 25 geographical regions having the highest number of fatal civil airliner accidents from 1945 until now.</p>
-          <p style="font-size: larger;">Note** Military accidents, corporate jets, hijackings and other criminal occurrences are not included.</p>
+          <h2>Aviation Accidents 📌</h2>
+          <div style="font-size: 20px; line-height: 35px;">
+            <span>The world still experience aviation accidents even until now and the largest loss of life overall in a collective incident is the </span>
+            <span style="color: darkblue;"><b>2,996 fatalities</b></span>
+            <span> in the coordinated terrorist destruction of airplanes and occupied buildings in the </span>
+            <span style="color: darkblue;"><b> September 11 attackes </b></span>
+            <span>by hijacking </span>
+            <span style="color: darkblue;"><b>4 airplanes </b></span>
+            <span>and carried out suicide attacks against targets in the </span>
+            <span style="color: darkblue;"> <b>United States of America. </b></span>
+            <!-- <span> 19 militants associated with the Islamic extremist group al Qaeda hijacked four airplanes and carried out suicide attacks against targets in the United States. </span>
+            <span>Two of the planes were flown into the twin towers of the World Trade Center in New York City.</span>
+            <span>The third plane hit the Pentagon in Arlington, Virginia and </span>
+            <span>the fourth plane crashed in a field in Shanksville, Pennsylvania. </span> -->
+          </div>
+          <p style="font-size: 18px;">This visualization shows the top 25 geographical regions having the highest number of fatal civil airliner accidents from 1945 until now.</p>
+          <p style="font-size: 18px;"><i>✨ Click on the map or bar chart to filter out the country. ✨</i></p>
           <br>
         </div>
       </div>
@@ -69,73 +92,93 @@
     </div>
     <!-- end pure grid group -->
 
+    <br>
+    <br>
+    <br>
+
     <!-- pure grid group -->
     <div class="pure-g">
-      <div class="pure-u-2-3">
+      <div class="pure-u-1-2">
         <div class="description description-left">
-          <h2>Reasons of Flight Accidents and Incidents?</h2>
-          <p style="font-size: larger;">✈️EXG Attacked using ground-based weapons</p>
-          <p style="font-size: larger;">💣INE Bombing</p>
-          <p style="font-size: larger;">💥COM Commercial (accident/incident)</p>
-          <p style="font-size: larger;">🛬EXS Attacked by other aircraft</p>
-          <p style="font-size: larger;">🛩️MIL Military (accident/incident)</p>
-          <p style="font-size: larger;">🛫 INH Hijacking</p>
+          <h2>Type of Flight Accidents and Incidents 📌</h2>
+          <div  style="font-size: 18px; line-height: 35px;">
+            <span>Occurrences have been coded to allow for identification and sorting by group (accidents versus attacks)</span>
+            <p>💥COM ⮕ Commercial (accident/incident)</p>
+            <p>🛩️MIL ⮕ Military (accident/incident)</p>
+            
+            <p>💣INB ⮕ Internal attack involving a pre-planned bomb</p>
+            <p>🛫INH ⮕ Internal attack to commandeer aircraft. Use of weapons.</p>
+  
+            <p>✈️EXG ⮕ External attack originating on the ground (missiles)</p>
+            <p>🛬EXS ⮕ External attack originating in the sky (by other aircraft)</p>
+          </div>
+         
         </div>
       </div>
-      <div class="pure-u-1-3">
+      <div class="pure-u-1-2">
         <div id="vis3"></div>
       </div>
       <br>
     </div>
     <!-- end pure grid group -->
 
+    <br>
+    <br>
+    <br>
+
     <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-2-3">
-        <div id="vis4"  class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-3">
+    <!-- <div class="pure-g">
+      <div class="pure-u-1-2">
         <div class="description description-right">
-          <h2>Fatalities of Crew, Passengers and Ground</h2>
+          <h2>Fatalities of Crew, Passengers and Ground 📌</h2>
           <p></p>
         </div>
       </div>
+      <div class="pure-u-1-2">
+        <div id="vis4"  class="vis-container"></div>
+      </div>
       <br>
-    </div>
+    </div> -->
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
         <div>
+          <h1 style="color: crimson;">Effect of COVID-19 on Air Traffics</h1>
           <h2>World Air Passenger Traffic evolution, 1980-2020 📌</h2>
         </div>
       </div>
       <div class="pure-u-1-2">
-        <h3>⬇️ -49% to -50%</h3>
-        <p>decline in world total passengers in 2021 vs. 2019</p>
+        <h3 style="font-size: 30px;">⬇️ -49% to -50%</h3>
+        <p style="font-size: 20px;"><i>decline in world total passengers in 2021 vs. 2019</i></p>
       </div>
       <div class="pure-u-1-2">
-        <h3>⬇️ -60%</h3>
-        <p>decline in world total passengers in 2020 vs. 2019</p>
+        <h3 style="font-size: 30px;">⬇️ -60%</h3>
+        <p style="font-size: 20px;"><i>decline in world total passengers in 2020 vs. 2019</i></p>
       </div>
+      <br>
+      <br>
+      <br>
       <div class="pure-u-1-1">
         <div id="vis5"  class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
 
+    <br>
+    <br>
+    <br>
+
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <div class="description description-left">
+        <div class="description description-left" style="font-size: 20px; line-height: 35px;">
           <h2>Impact of COVID-19 on Passenger traffic and revenues by region for 2020 📌</h2>
-          <p>air passenger traffic</p>
-          <p>airports</p>
-          <p>airlines</p>
-          <p>tourism</p>
-          <p>trade</p>
-          <p>global economy</p>
+          <p><b>Air passenger traffic:</b> Overall <b style="color: red; ">reduction</b> of air passengers ranging <b style=" color: red; ">from 60% in 2020</b> compared to 2019.</p>
+          <p><b>Airports:</b> Estimated <b style=" color: red; ">loss of approximately over USD 124 billion</b> airport revenues in 2020 compared to business as usual.</p>
+          <p><b>Airlines:</b> A <b style=" color: red; ">65.9% decline of revenue passenger kilometers</b> in 2020 compared to 2019.</p>
+          <p><b>Tourism:</b> A <b style=" color: red; ">decline in international tourism receipts of USD 1.3 trillion</b> in 2020 compared to the USD 1.5 trillion generated in 2019.</p>
         </div>
       </div>
       <div class="pure-u-1-1">
@@ -143,6 +186,8 @@
       </div>
     </div>
     <!-- end pure grid group -->
+
+    <br>
 
     <!-- pure grid group -->
     <div class="pure-g">
@@ -160,6 +205,10 @@
       </div>
     </div>
     <!-- end pure grid group -->
+
+    <br>
+    <br>
+    <br>
 
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">

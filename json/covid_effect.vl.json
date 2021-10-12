@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1200,
-  "height": 400,
+  "width": 1000,
+  "height": 600,
   "background": "#f9f9f9",
   "title": "",
   "projection": {"type": "equalEarth"},
@@ -24,11 +24,11 @@
           "field": "properties.CONTINENT",
           "scale": {
             "range": [
-              "#ABDEE6",
-              "#CBAACB",
-              "#FEE1E8",
-              "#F6EAC2",
-              "#CCE2CB",
+              "#90A5A7",
+              "#F0DFA7",
+              "#C2B099",
+              "#C18265",
+              "#A86355",
               "#FCB9AA",
               "#ECEAE4",
               "#F3B0C3"
@@ -56,23 +56,24 @@
         {
           "mark": {
             "type": "text",
-            "dx": -280,
-            "dy": -150,
+            "dx": -400,
+            "dy": -200,
             "align": "right",
-            "fontWeight": "bold"
+            "fontWeight": "bold",
+            "fontSize": 15
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -280, "dy": -130, "align": "right"},
+          "mark": {"type": "text", "dx": -400, "dy": -180, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -280, "dy": -110, "align": "right"},
+          "mark": {"type": "text", "dx": -400, "dy": -160, "align": "right","fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -280, "dy": -90, "align": "right"},
+          "mark": {"type": "text", "dx": -400, "dy": -140, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -92,23 +93,24 @@
         {
           "mark": {
             "type": "text",
-            "dx": -200,
+            "dx": -300,
             "dy": 0,
             "align": "right",
-            "fontWeight": "bold"
+            "fontWeight": "bold",
+            "fontSize": 15
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -200, "dy": 20, "align": "right"},
+          "mark": {"type": "text", "dx": -300, "dy": 20, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -200, "dy": 40, "align": "right"},
+          "mark": {"type": "text", "dx": -300, "dy": 40, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -200, "dy": 60, "align": "right"},
+          "mark": {"type": "text", "dx": -300, "dy": 60, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -129,22 +131,23 @@
           "mark": {
             "type": "text",
             "dx": 20,
-            "dy": -270,
+            "dy": -380,
             "align": "left",
-            "fontWeight": "bold"
+            "fontWeight": "bold",
+            "fontSize": 15
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -250, "align": "left"},
+          "mark": {"type": "text", "dx": 20, "dy": -360, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -230, "align": "left"},
+          "mark": {"type": "text", "dx": 20, "dy": -340, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -210, "align": "left"},
+          "mark": {"type": "text", "dx": 20, "dy": -320, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -165,22 +168,23 @@
           "mark": {
             "type": "text",
             "dx": 0,
-            "dy": 100,
+            "dy": 160,
             "align": "left",
-            "fontWeight": "bold"
+            "fontWeight": "bold",
+            "fontSize": 15
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 0, "dy": 120, "align": "left"},
+          "mark": {"type": "text", "dx": 0, "dy": 180, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 0, "dy": 140, "align": "left"},
+          "mark": {"type": "text", "dx": 0, "dy": 200, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 0, "dy": 160, "align": "left"},
+          "mark": {"type": "text", "dx": 0, "dy": 220, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -200,23 +204,24 @@
         {
           "mark": {
             "type": "text",
-            "dx": 320,
-            "dy": -80,
+            "dx": 410,
+            "dy": -120,
             "align": "left",
-            "fontWeight": "bold"
+            "fontWeight": "bold",
+            "fontSize": 15
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 320, "dy": -60, "align": "left"},
+          "mark": {"type": "text", "dx": 410, "dy": -100, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 320, "dy": -40, "align": "left"},
+          "mark": {"type": "text", "dx": 410, "dy": -80, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 320, "dy": -20, "align": "left"},
+          "mark": {"type": "text", "dx": 410, "dy": -60, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]

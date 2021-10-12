@@ -5,7 +5,7 @@
     "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/air_passenger_traffic_evolution.csv"
   },
   "background": "#f9f9f9",
-  "width": 1000,
+  "width": "container",
   "height": 400,
   "encoding": {
     "x": {
@@ -26,7 +26,7 @@
         "field": "Attribute",
         "type": "nominal",
         "legend": null,
-        "scale": {"range": ["#beaed4", "#fbb4ae", "#a6cee3"]}
+        "scale": {"range": ["#D9A87E", "#323F59", "#F27777"]}
       },
       "value": "grey"
     },
@@ -46,13 +46,13 @@
       ],
       "mark": {
         "type": "line",
-        "strokeWidth": 50,
+        "strokeWidth": 10,
         "stroke": "transparent",
         "point": true
       }
     },
     {
-      "mark": "line",
+      "mark": {"type": "line", "strokeWidth": 5},
       "encoding": {
         "tooltip": [
           {"field": "Value", "type": "quantitative"},
@@ -62,13 +62,13 @@
     },
     {
       "encoding": {
-        "x": {"aggregate": "max", "field": "year"},
-        "y": {"aggregate": {"argmax": "year"}, "field": "Value"}
+        "x": {"aggregate": "max", "field": "year", "axis": {"labelFontSize": 15, "titleFontSize": 20}},
+        "y": {"aggregate": {"argmax": "year"}, "field": "Value", "axis": {"labelFontSize": 15, "titleFontSize": 20}}
       },
       "layer": [
         {"mark": {"type": "circle"}},
         {
-          "mark": {"type": "text", "align": "left", "dx": 4},
+          "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 15},
           "encoding": {"text": {"field": "Attribute", "type": "nominal"}}
         }
       ]
@@ -81,19 +81,19 @@
         ]
       },
       "layer": [
-        {"mark": {"type": "line", "strokeDash": [5, 8]}},
+        {"mark": {"type": "line", "strokeDash": [5, 8], "strokeWidth": 5}},
         {
-          "mark": {"type": "text", "dy": -10},
+          "mark": {"type": "text", "dy": -10, "fontSize": 15},
           "encoding": {
             "text": {"field": "description", "type": "nominal"},
-            "tooltip": [{"field": "x", "type": "temporal"}]
+            "tooltip": [{"field": "x", "type": "temporal", "title": "Year"}]
           }
         }
       ],
       "encoding": {
         "x": {"field": "x", "type": "temporal"},
         "y": {"field": "y", "type": "quantitative"},
-        "color": {"value": "lightgrey"},
+        "color": {"value": "#8786A6"},
         "opacity": {"value": 1}
       }
     },
@@ -104,22 +104,22 @@
           {"y": "3.5", "x": "1997", "description": "Asian Financial Crisis"}
         ]
       },
+      "layer": [
+        {"mark": {"type": "line", "strokeDash": [5, 8], "strokeWidth": 5}},
+        {
+          "mark": {"type": "text", "dy": -10, "fontSize": 15},
+          "encoding": {
+            "text": {"field": "description", "type": "nominal"},
+            "tooltip": [{"field": "x", "type": "temporal", "title": "Year"}]
+          }
+        }
+      ],
       "encoding": {
         "x": {"field": "x", "type": "temporal"},
         "y": {"field": "y", "type": "quantitative"},
-        "color": {"value": "lightgrey"},
+        "color": {"value": "#8786A6"},
         "opacity": {"value": 1}
-      },
-      "layer": [
-        {"mark": {"type": "line", "strokeDash": [5, 8]}},
-        {
-          "mark": {"type": "text", "dy": -10},
-          "encoding": {
-            "text": {"field": "description", "type": "nominal"},
-            "tooltip": [{"field": "x", "type": "temporal"}]
-          }
-        }
-      ]
+      }
     },
     {
       "data": {
@@ -128,22 +128,22 @@
           {"y": "4", "x": "2001", "description": "9/11"}
         ]
       },
+      "layer": [
+        {"mark": {"type": "line", "strokeDash": [5, 8], "strokeWidth": 5}},
+        {
+          "mark": {"type": "text", "dy": -10, "fontSize": 15},
+          "encoding": {
+            "text": {"field": "description", "type": "nominal"},
+            "tooltip": [{"field": "x", "type": "temporal", "title": "Year"}]
+          }
+        }
+      ],
       "encoding": {
         "x": {"field": "x", "type": "temporal"},
         "y": {"field": "y", "type": "quantitative"},
-        "color": {"value": "lightgrey"},
+        "color": {"value": "#8786A6"},
         "opacity": {"value": 1}
-      },
-      "layer": [
-        {"mark": {"type": "line", "strokeDash": [5, 8]}},
-        {
-          "mark": {"type": "text", "dy": -10},
-          "encoding": {
-            "text": {"field": "description", "type": "nominal"},
-            "tooltip": [{"field": "x", "type": "temporal"}]
-          }
-        }
-      ]
+      }
     },
     {
       "data": {
@@ -152,22 +152,22 @@
           {"y": "4.5", "x": "2003", "description": "SARS"}
         ]
       },
+      "layer": [
+        {"mark": {"type": "line", "strokeDash": [5, 8], "strokeWidth": 5}},
+        {
+          "mark": {"type": "text", "dy": -10, "fontSize": 15},
+          "encoding": {
+            "text": {"field": "description", "type": "nominal"},
+            "tooltip": [{"field": "x", "type": "temporal", "title": "Year"}]
+          }
+        }
+      ],
       "encoding": {
         "x": {"field": "x", "type": "temporal"},
         "y": {"field": "y", "type": "quantitative"},
-        "color": {"value": "lightgrey"},
+        "color": {"value": "#8786A6"},
         "opacity": {"value": 1}
-      },
-      "layer": [
-        {"mark": {"type": "line", "strokeDash": [5, 8]}},
-        {
-          "mark": {"type": "text", "dy": -10},
-          "encoding": {
-            "text": {"field": "description", "type": "nominal"},
-            "tooltip": [{"field": "x", "type": "temporal"}]
-          }
-        }
-      ]
+      }
     },
     {
       "data": {
@@ -176,22 +176,22 @@
           {"y": "5", "x": "2008", "description": "Financial Crisis"}
         ]
       },
+      "layer": [
+        {"mark": {"type": "line", "strokeDash": [5, 8], "strokeWidth": 5}},
+        {
+          "mark": {"type": "text", "dy": -10, "fontSize": 15},
+          "encoding": {
+            "text": {"field": "description", "type": "nominal"},
+            "tooltip": [{"field": "x", "type": "temporal", "title": "Year"}]
+          }
+        }
+      ],
       "encoding": {
         "x": {"field": "x", "type": "temporal"},
         "y": {"field": "y", "type": "quantitative"},
-        "color": {"value": "lightgrey"},
+        "color": {"value": "#8786A6"},
         "opacity": {"value": 1}
-      },
-      "layer": [
-        {"mark": {"type": "line", "strokeDash": [5, 8]}},
-        {
-          "mark": {"type": "text", "dy": -10},
-          "encoding": {
-            "text": {"field": "description", "type": "nominal"},
-            "tooltip": [{"field": "x", "type": "temporal"}]
-          }
-        }
-      ]
+      }
     },
     {
       "data": {
@@ -200,23 +200,25 @@
           {"y": "4.8", "x": "2019", "description": "COVID-19"}
         ]
       },
+      "layer": [
+        {"mark": {"type": "line", "strokeDash": [5, 8], "strokeWidth": 5}},
+        {
+          "mark": {"type": "text", "dy": -10, "fontSize": 15},
+          "encoding": {
+            "text": {"field": "description", "type": "nominal"},
+            "tooltip": [{"field": "x", "type": "temporal", "title": "Year"}]
+          }
+        }
+      ],
       "encoding": {
         "x": {"field": "x", "type": "temporal"},
         "y": {"field": "y", "type": "quantitative"},
-        "color": {"value": "lightgrey"},
+        "color": {"value": "#B64C62"},
         "opacity": {"value": 1}
-      },
-      "layer": [
-        {"mark": {"type": "line", "strokeDash": [5, 8]}},
-        {
-          "mark": {"type": "text", "dy": -10},
-          "encoding": {
-            "text": {"field": "description", "type": "nominal"},
-            "tooltip": [{"field": "x", "type": "temporal"}]
-          }
-        }
-      ]
+      }
     }
   ],
-  "config": {"view": {"stroke": null}}
+  "config": {
+    "view": {"stroke": null} 
+  }
 }
