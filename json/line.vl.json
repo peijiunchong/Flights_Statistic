@@ -6,7 +6,7 @@
   },
   "background": "#f9f9f9",
   "width": "container",
-  "height": 400,
+  "height": 250,
   "encoding": {
     "x": {
       "field": "year",
@@ -62,8 +62,8 @@
     },
     {
       "encoding": {
-        "x": {"aggregate": "max", "field": "year", "axis": {"labelFontSize": 15, "titleFontSize": 20}},
-        "y": {"aggregate": {"argmax": "year"}, "field": "Value", "axis": {"labelFontSize": 15, "titleFontSize": 20}}
+        "x": {"aggregate": "max", "field": "year", "axis": {"labelFontSize": 12, "titleFontSize": 15}},
+        "y": {"aggregate": {"argmax": "year"}, "field": "Value", "axis": {"labelFontSize": 12, "titleFontSize": 15}}
       },
       "layer": [
         {"mark": {"type": "circle"}},

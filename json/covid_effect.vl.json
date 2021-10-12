@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1000,
+  "width": 800,
   "height": 600,
   "background": "#f9f9f9",
   "title": "",
@@ -56,8 +56,8 @@
         {
           "mark": {
             "type": "text",
-            "dx": -400,
-            "dy": -200,
+            "dx": -300,
+            "dy": -180,
             "align": "right",
             "fontWeight": "bold",
             "fontSize": 15
@@ -65,15 +65,15 @@
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -400, "dy": -180, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -300, "dy": -160, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -400, "dy": -160, "align": "right","fontSize": 15},
+          "mark": {"type": "text", "dx": -300, "dy": -140, "align": "right","fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -400, "dy": -140, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -300, "dy": -120, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -93,7 +93,7 @@
         {
           "mark": {
             "type": "text",
-            "dx": -300,
+            "dx": -200,
             "dy": 0,
             "align": "right",
             "fontWeight": "bold",
@@ -102,15 +102,15 @@
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -300, "dy": 20, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -200, "dy": 20, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -300, "dy": 40, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -200, "dy": 40, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -300, "dy": 60, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -200, "dy": 60, "align": "right", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -131,7 +131,7 @@
           "mark": {
             "type": "text",
             "dx": 20,
-            "dy": -380,
+            "dy": -280,
             "align": "left",
             "fontWeight": "bold",
             "fontSize": 15
@@ -139,15 +139,15 @@
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -360, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 20, "dy": -260, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -340, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 20, "dy": -240, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -320, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 20, "dy": -220, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -167,8 +167,8 @@
         {
           "mark": {
             "type": "text",
-            "dx": 0,
-            "dy": 160,
+            "dx": -10,
+            "dy": 100,
             "align": "left",
             "fontWeight": "bold",
             "fontSize": 15
@@ -176,15 +176,15 @@
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 0, "dy": 180, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": -10, "dy": 120, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 0, "dy": 200, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": -10, "dy": 140, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 0, "dy": 220, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": -10, "dy": 160, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -204,7 +204,7 @@
         {
           "mark": {
             "type": "text",
-            "dx": 410,
+            "dx": 300,
             "dy": -120,
             "align": "left",
             "fontWeight": "bold",
@@ -213,15 +213,15 @@
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 410, "dy": -100, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 300, "dy": -100, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 410, "dy": -80, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 300, "dy": -80, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 410, "dy": -60, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 300, "dy": -60, "align": "left", "fontSize": 15},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
