@@ -26,8 +26,8 @@
         "opacity": {"value": 0.5},
         "tooltip": [
           {"field": "to_airport", "type": "nominal", "title": "Airport"},
-          {"field": "to_city", "type": "nominal"},
-          {"field": "to_country", "type": "nominal"}
+          {"field": "to_city", "type": "nominal", "title": "To City"},
+          {"field": "to_country", "type": "nominal", "title": "To Country"}
         ]
       }
     },
@@ -44,8 +44,8 @@
         "opacity": {"value": 0.5},
         "tooltip": [
           {"field": "from_airport", "type": "nominal", "title": "Airport"},
-          {"field": "from_city", "type": "nominal"},
-          {"field": "from_country", "type": "nominal"}
+          {"field": "from_city", "type": "nominal", "title": "From City"},
+          {"field": "from_country", "type": "nominal", "title": "From Country"}
         ]
       }
     },
