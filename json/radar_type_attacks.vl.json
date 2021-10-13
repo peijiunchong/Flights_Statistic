@@ -3,7 +3,7 @@
   "description": "A radar chart example, showing multiple dimensions in a radial layout.",
   "width": 450,
   "height": 450,
-  "background": "#f9f9f9",
+  "background": "#F2F2F2",
   "padding": 40,
   "autosize": {"type": "none", "contains": "padding"},
   "signals": [{"name": "radius", "update": "width / 2"}],
@@ -82,7 +82,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": {"data": "table", "field": "category"},
-      "range": {"scheme": "category10"}
+      "range": ["#D97B73"]
     }
   ],
   "encode": {"enter": {"x": {"signal": "radius"}, "y": {"signal": "radius"}}},
@@ -109,7 +109,7 @@
                 "signal": "scale('radial', datum.log_value) * sin(scale('angular', datum.key))"
               },
               "stroke": {"scale": "color", "field": "category"},
-              "strokeWidth": {"value": 1},
+              "strokeWidth": {"value": 2},
               "fill": {"scale": "color", "field": "category"},
               "fillOpacity": {"value": 0.1}
             }

@@ -3,7 +3,7 @@
   "description": "A dual axis chart, created by setting y's scale resolution to `\"independent\"`",
   "width": "container",
   "height": 300,
-  "background": "#f9f9f9",
+  "background": "#F2F2F2",
   "data": {
     "values": [
       {"month": "01/20", "cargo-flights": 32, "growth": 2},

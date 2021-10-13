@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 600,
-  "background": "#f9f9f9",
+  "width": 850,
+  "height": 400,
+  "background": "#F2F2F2",
   "title": "",
   "projection": {"type": "equalEarth"},
   "layer": [
@@ -60,20 +60,21 @@
             "dy": -180,
             "align": "right",
             "fontWeight": "bold",
-            "fontSize": 15
+            "fontSize": 12,
+            "color": "#A86355"
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -300, "dy": -160, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -300, "dy": -160, "align": "right", "fontSize": 12},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -300, "dy": -140, "align": "right","fontSize": 15},
+          "mark": {"type": "text", "dx": -300, "dy": -140, "align": "right","fontSize": 12},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -300, "dy": -120, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -300, "dy": -120, "align": "right", "fontSize": 12},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -97,20 +98,21 @@
             "dy": 0,
             "align": "right",
             "fontWeight": "bold",
-            "fontSize": 15
+            "fontSize": 12,
+            "color": "#F3B0C3"
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -200, "dy": 20, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -200, "dy": 20, "align": "right", "fontSize": 12},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -200, "dy": 40, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -200, "dy": 40, "align": "right", "fontSize": 12},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -200, "dy": 60, "align": "right", "fontSize": 15},
+          "mark": {"type": "text", "dx": -200, "dy": 60, "align": "right", "fontSize": 12},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -134,20 +136,21 @@
             "dy": -280,
             "align": "left",
             "fontWeight": "bold",
-            "fontSize": 15
+            "fontSize": 12,
+            "color": "#C18265"
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -260, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 20, "dy": -260, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -240, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 20, "dy": -240, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 20, "dy": -220, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 20, "dy": -220, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -171,20 +174,21 @@
             "dy": 100,
             "align": "left",
             "fontWeight": "bold",
-            "fontSize": 15
+            "fontSize": 12,
+            "color": "#90A5A7"
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -10, "dy": 120, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": -10, "dy": 120, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -10, "dy": 140, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": -10, "dy": 140, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": -10, "dy": 160, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": -10, "dy": 160, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]
@@ -204,24 +208,25 @@
         {
           "mark": {
             "type": "text",
-            "dx": 300,
+            "dx": 310,
             "dy": -120,
             "align": "left",
             "fontWeight": "bold",
-            "fontSize": 15
+            "fontSize": 12,
+            "color": "#FCB9AA"
           },
           "encoding": {"text": {"field": "continent", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 300, "dy": -100, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 310, "dy": -100, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "capacity", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 300, "dy": -80, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 310, "dy": -80, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "passenger", "type": "nominal"}}
         },
         {
-          "mark": {"type": "text", "dx": 300, "dy": -60, "align": "left", "fontSize": 15},
+          "mark": {"type": "text", "dx": 310, "dy": -60, "align": "left", "fontSize": 12},
           "encoding": {"text": {"field": "revenue", "type": "nominal"}}
         }
       ]

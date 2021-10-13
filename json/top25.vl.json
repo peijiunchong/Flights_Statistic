@@ -4,7 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/top25_accidents.csv"
   },
-  "background": "#f9f9f9",
+  "background": "#F2F2F2",
   "vconcat": [
     {
       "width": 800,
@@ -80,7 +80,7 @@
       },
       "hconcat": [
         {
-          "width": 420,
+          "width": 380,
           "height": 200,
           "mark": {"type": "bar", "fill": "#8ca252", "cursor": "pointer"},
           "params": [
@@ -109,7 +109,7 @@
           }
         },
         {
-          "width": 420,
+          "width": 380,
           "height": 200,
           "mark": {"type": "bar", "fill": "#e7ba52", "cursor": "pointer"},
           "params": [
