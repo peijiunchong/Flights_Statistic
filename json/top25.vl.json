@@ -17,7 +17,7 @@
       "layer": [
         {
           "transform": [{"calculate": "datum.properties.NAME", "as": "note"}],
-          "mark": {"type": "geoshape", "fill": "whitesmoke", "stroke": "white"},
+          "mark": {"type": "geoshape", "fill": "#f1eee1", "stroke": "white"},
           "encoding": {"tooltip": {"field": "note"}}
         },
         {

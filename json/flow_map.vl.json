@@ -5,6 +5,18 @@
   "background": "#F2F2F2",
   "title": "",
   "projection": {"type": "equalEarth"},
+  "params": [
+    {
+      "name": "Distance",
+      "value": 10000,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 15000,
+        "name": "Distance(km): "
+      }
+    }
+  ],
   "layer": [
     {
       "data": {
@@ -18,12 +30,36 @@
         "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/flight-route.csv"
       },
       "mark": {"type": "circle"},
+      "transform": [
+        {"filter": "datum.distance > Distance"}
+      ],
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "on": "mouseover"
+          }
+        }
+      ],
       "encoding": {
         "longitude": {"field": "to_long", "type": "quantitative"},
         "latitude": {"field": "to_lat", "type": "quantitative"},
-        "size": {"value": 8},
-        "color": {"value": "red"},
-        "opacity": {"value": 0.5},
+        "size": {
+          "condition": {
+            "param": "hover",
+            "value": 50
+          },
+         "value": 10
+        },
+        "color": {"value": "#E73F33"},
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "value": 0.8
+          },
+          "value": 0.5
+        },
         "tooltip": [
           {"field": "to_airport", "type": "nominal", "title": "Airport"},
           {"field": "to_city", "type": "nominal", "title": "To City"},
@@ -36,12 +72,27 @@
         "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/flight-route.csv"
       },
       "mark": {"type": "circle"},
+      "transform": [
+        {"filter": "datum.distance > Distance"}
+      ],
       "encoding": {
         "longitude": {"field": "from_long", "type": "quantitative"},
         "latitude": {"field": "from_lat", "type": "quantitative"},
-        "size": {"value": 8},
-        "color": {"value": "red"},
-        "opacity": {"value": 0.5},
+        "size": {
+          "condition": {
+            "param": "hover",
+            "value": 50
+          },
+         "value": 10
+        },
+        "color": {"value": "#E73F33"},
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "value": 0.8
+          },
+          "value": 0.5
+        },
         "tooltip": [
           {"field": "from_airport", "type": "nominal", "title": "Airport"},
           {"field": "from_city", "type": "nominal", "title": "From City"},
@@ -50,9 +101,13 @@
       }
     },
     {
+      
       "data": {
         "url": "https://raw.githubusercontent.com/peijiunchong/Flights_Statistic/main/data/flight-route.csv"
       },
+      "transform": [
+        {"filter": "datum.distance > Distance"}
+      ],
       "mark": "rule",
       "encoding": {
         "longitude": {"field": "from_long", "type": "quantitative"},
